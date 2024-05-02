@@ -17,6 +17,7 @@ RUN set -ex; \
              xdg-utils \
              unzip \
              rsync \
+             openssh-server \
              bash; \
     rm -rf /var/lib/apt/lists/*
 
