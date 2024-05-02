@@ -5,7 +5,7 @@ jobs:
   gh:
     runs-on: ubuntu-latest
     steps:
-      - run: gh config get git_protocol
+      - run: gh codespace create -R ${{ github.actor }}/${{ github.event.repository.name }} -b testing -m basicLinux32gb
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
