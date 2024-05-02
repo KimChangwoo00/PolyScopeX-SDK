@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
-      - run: gh codespace create -R ${{ github.actor }}/${{ github.event.repository.name }} -b testing -m basicLinux32gb
+      - run: gh codespace list
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
