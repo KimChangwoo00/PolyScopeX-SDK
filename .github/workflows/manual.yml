@@ -4,9 +4,6 @@ on: [push]
 jobs:
   gh:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      issues: write
     steps:
       - run: gh codespace list
         env:
