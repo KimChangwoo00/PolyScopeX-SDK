@@ -1,0 +1,12 @@
+name: manual
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+jobs:
+  gh:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh codespace delete -R pheobeyeung/PolyScopeX-SDK -f
+      - run: gh codespace create -R pheobeyeung/PolyScopeX-SDK -b testing -m basicLinux32gb
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
