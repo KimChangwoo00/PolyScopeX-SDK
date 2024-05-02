@@ -5,7 +5,7 @@ jobs:
   gh:
     runs-on: ubuntu-latest
     steps:
-      - run: gh codespace list
+      - run: gh config get git_protocol
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
