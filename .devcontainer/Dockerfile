@@ -13,6 +13,7 @@ RUN set -ex; \
              sudo \
              tzdata \
              unzip \
+             openssh-server \
              rsync; \
     rm -rf /var/lib/apt/lists/*
 
